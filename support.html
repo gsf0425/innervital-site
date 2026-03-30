@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerVital – Support / 技术支持</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { color: #2E7D32; } h2 { color: #388E3C; margin-top: 32px; }
+    .lang-switch { margin-bottom: 32px; }
+    .lang-switch a { margin-right: 12px; color: #2E7D32; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .faq-q { font-weight: 700; margin-top: 16px; }
+    footer { margin-top: 48px; font-size: 13px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="#" onclick="show('en')">English</a>
+    <a href="#" onclick="show('zh')">中文</a>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="section active">
+    <h1>🌿 InnerVital – Support</h1>
+    <p>Thank you for using InnerVital. If you have any questions or feedback, we're here to help.</p>
+
+    <h2>Contact Us</h2>
+    <p>📧 Email: <a href="mailto:gsf0425@163.com">gsf0425@163.com</a></p>
+    <p>We typically respond within 1–2 business days.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <p class="faq-q">Q: Is my data safe?</p>
+    <p>A: Yes. All data is stored locally on your device. InnerVital has no servers and never uploads your information.</p>
+
+    <p class="faq-q">Q: How do I retake the constitution test?</p>
+    <p>A: Go to the Me tab → tap your constitution card → tap "Retake Test".</p>
+
+    <p class="faq-q">Q: How do I switch the language?</p>
+    <p>A: Go to the Me tab → tap the language toggle at the top of the page.</p>
+
+    <p class="faq-q">Q: How do I enable daily reminders?</p>
+    <p>A: Go to the Me tab → Notification Settings → toggle on and set your preferred time.</p>
+
+    <p class="faq-q">Q: How do I back up my data?</p>
+    <p>A: Go to the Me tab → tap "Export Backup" to save your data to iCloud Drive or your device.</p>
+
+    <p class="faq-q">Q: Is InnerVital a medical app?</p>
+    <p>A: No. InnerVital is a wellness education app based on Traditional Chinese Medicine principles. It is not a substitute for professional medical advice.</p>
+
+    <h2>Privacy Policy</h2>
+    <p><a href="privacy.html">View Privacy Policy →</a></p>
+  </div>
+
+  <!-- 中文 -->
+  <div id="zh" class="section">
+    <h1>🌿 InnerVital – 技术支持</h1>
+    <p>感谢您使用 InnerVital。如有任何问题或反馈，欢迎联系我们。</p>
+
+    <h2>联系我们</h2>
+    <p>📧 邮箱：<a href="mailto:gsf0425@163.com">gsf0425@163.com</a></p>
+    <p>我们通常在 1~2 个工作日内回复。</p>
+
+    <h2>常见问题</h2>
+
+    <p class="faq-q">Q：我的数据安全吗？</p>
+    <p>A：是的。所有数据均存储在您的设备本地，InnerVital 没有服务器，不会上传您的任何信息。</p>
+
+    <p class="faq-q">Q：如何重新进行体质测试？</p>
+    <p>A：进入「我的」页面 → 点击体质卡片 → 点击「重新测试」。</p>
+
+    <p class="faq-q">Q：如何切换语言？</p>
+    <p>A：进入「我的」页面 → 点击页面顶部的语言切换按钮。</p>
+
+    <p class="faq-q">Q：如何开启每日提醒？</p>
+    <p>A：进入「我的」页面 → 通知设置 → 开启开关并设置提醒时间。</p>
+
+    <p class="faq-q">Q：如何备份数据？</p>
+    <p>A：进入「我的」页面 → 点击「导出备份」，将数据保存到 iCloud 或本机。</p>
+
+    <p class="faq-q">Q：InnerVital 是医疗应用吗？</p>
+    <p>A：不是。InnerVital 是基于中医理论的养生教育应用，不能替代专业医疗建议。</p>
+
+    <h2>隐私政策</h2>
+    <p><a href="privacy.html">查看隐私政策 →</a></p>
+  </div>
+
+  <footer>© 2026 InnerVital. All rights reserved.</footer>
+
+  <script>
+    function show(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+    const lang = navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    show(lang);
+  </script>
+</body>
+</html>

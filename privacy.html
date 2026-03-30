@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnerVital – Privacy Policy / 隐私政策</title>
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { color: #2E7D32; } h2 { color: #388E3C; margin-top: 32px; }
+    .lang-switch { margin-bottom: 32px; }
+    .lang-switch a { margin-right: 12px; color: #2E7D32; }
+    .section { display: none; }
+    .section.active { display: block; }
+    footer { margin-top: 48px; font-size: 13px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <a href="#" onclick="show('en')">English</a>
+    <a href="#" onclick="show('zh')">中文</a>
+  </div>
+
+  <!-- English -->
+  <div id="en" class="section active">
+    <h1>🌿 InnerVital – Privacy Policy</h1>
+    <p><em>Last updated: March 2026</em></p>
+
+    <h2>1. Data We Collect</h2>
+    <p>InnerVital stores all data <strong>locally on your device</strong>. We do not operate any servers and do not transmit your personal information over the internet.</p>
+    <p>Data stored locally includes:</p>
+    <ul>
+      <li>Your selected wellness goals</li>
+      <li>Constitution assessment results and scores</li>
+      <li>Daily check-in ratings (sleep, energy, mood)</li>
+      <li>Task completion records</li>
+      <li>App language preference</li>
+      <li>Notification settings</li>
+    </ul>
+
+    <h2>2. Third-Party Services</h2>
+    <p>InnerVital does not use any third-party analytics, advertising, or tracking services.</p>
+
+    <h2>3. Children's Privacy</h2>
+    <p>InnerVital is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>4. Data Deletion</h2>
+    <p>To delete all your data, simply uninstall the app. All locally stored data will be removed from your device.</p>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. The latest version will always be available at this page.</p>
+
+    <h2>6. Contact</h2>
+    <p>If you have any questions, please contact us at: <a href="mailto:gsf0425@163.com">gsf0425@163.com</a></p>
+  </div>
+
+  <!-- 中文 -->
+  <div id="zh" class="section">
+    <h1>🌿 InnerVital – 隐私政策</h1>
+    <p><em>最后更新：2026年3月</em></p>
+
+    <h2>1. 我们收集的数据</h2>
+    <p>InnerVital 将所有数据<strong>存储在您的设备本地</strong>。我们不运营任何服务器，也不通过互联网传输您的个人信息。</p>
+    <p>本地存储的数据包括：</p>
+    <ul>
+      <li>您选择的养生目标</li>
+      <li>体质测试结果及评分</li>
+      <li>每日打卡评分（睡眠、精力、情绪）</li>
+      <li>任务完成记录</li>
+      <li>应用语言偏好</li>
+      <li>通知设置</li>
+    </ul>
+
+    <h2>2. 第三方服务</h2>
+    <p>InnerVital 不使用任何第三方分析、广告或追踪服务。</p>
+
+    <h2>3. 儿童隐私</h2>
+    <p>InnerVital 面向 13 岁及以上用户。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+
+    <h2>4. 数据删除</h2>
+    <p>如需删除所有数据，卸载应用即可。设备上所有本地存储的数据将被一并清除。</p>
+
+    <h2>5. 政策更新</h2>
+    <p>我们可能会不定期更新本政策，最新版本将始终发布在本页面。</p>
+
+    <h2>6. 联系我们</h2>
+    <p>如有任何问题，请联系：<a href="mailto:gsf0425@163.com">gsf0425@163.com</a></p>
+  </div>
+
+  <footer>© 2026 InnerVital. All rights reserved.</footer>
+
+  <script>
+    function show(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+    // Auto-detect language
+    const lang = navigator.language.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    show(lang);
+  </script>
+</body>
+</html>
